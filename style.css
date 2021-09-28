@@ -7,10 +7,12 @@
 
 /* VARIABLES */
 :root {
+  /* colors */
   --sedans: #e38826;
   --suvs: #006970;
   --luxury: #004241;
   --white: #f2f2f2;
+
   --radius: 0.625rem;
 }
 
@@ -23,12 +25,12 @@ main {
 }
 
 .container {
+  display: grid;
+  height: 100%;
   font-size: 1.5rem;
   padding: 3rem;
-  display: grid;
   gap: 2rem;
   text-align: left;
-  height: 100%;
 }
 
 /* TITLES */
@@ -45,15 +47,16 @@ main {
 }
 
 .button {
-  width: 5rem;
-  border-radius: 2rem;
   width: 10rem;
   padding: 1rem;
+
   text-align: center;
-  font-size: 1rem;
-  background-color: var(--white);
   text-decoration: none;
   font-family: 'Lexend Deca', sans-serif;
+  font-size: 1rem;
+
+  border-radius: 2rem;
+  background-color: var(--white);
 }
 
 /* SEDANS */
