@@ -1,0 +1,131 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --sedans: #e38826;
+  --suvs: #006970;
+  --luxury: #004241;
+  --white: #f2f2f2;
+  --radius: 0.625rem;
+}
+
+body {
+  background-color: var(--white);
+}
+
+main {
+  margin: 1.5rem;
+}
+
+.container {
+  font-size: 1.5rem;
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+  text-align: left;
+  height: 100%;
+}
+
+/* TITLES */
+.container h2 {
+  font-family: 'Big Shoulders Display', cursive, sans-serif;
+  color: var(--white);
+}
+
+/* PARAGRAPHS */
+.container p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.9375rem;
+  color: #ffffffbf;
+}
+
+.button {
+  width: 5rem;
+  border-radius: 2rem;
+  width: 10rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--white);
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* SEDANS */
+.sedans {
+  background-color: var(--sedans);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.sedans .button {
+  color: var(--sedans);
+}
+
+/* SUVS */
+.suvs {
+  background-color: var(--suvs);
+}
+
+.suvs .button {
+  color: var(--suvs);
+}
+
+/* LUXURY */
+.luxury {
+  background-color: var(--luxury);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.luxury .button {
+  color: var(--luxury);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1200px) {
+  main {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .all {
+    display: grid;
+    grid-auto-flow: column;
+    width: 60%;
+  }
+
+  .container img {
+    width: 4.5rem;
+  }
+
+  /* TITLES */
+  .container h2 {
+    font-size: 3rem;
+  }
+
+  /* PARAGRAPHS */
+  .container p {
+    margin-bottom: 4rem;
+  }
+
+  /* SEDANS */
+  .sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--radius);
+  }
+
+  /* LUXURY */
+  .luxury {
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: 0;
+  }
+}
